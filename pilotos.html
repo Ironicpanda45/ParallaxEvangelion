@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Genesis Evangelion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header id="encabezado-principal">
+        <div class="logo"><img src="./img/Evangelion_Logo.png" alt=""></div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="pilotos.html" class="activo">Pilotos</a>
+            <a href="angeles.html">Ángeles</a>
+        </nav>
+    </header>
+
+    <main class="contenedor-pilotos">
+        <div class="fondo-evas">
+            <div class="eva-bg" id="eva-shinji" style="background-image: url('img/eva01.png');"></div>
+            <div class="eva-bg" id="eva-asuka" style="background-image: url('img/eva02.png');"></div>
+            <div class="eva-bg" id="eva-rei" style="background-image: url('img/eva00.png');"></div>
+        </div>
+
+        <div class="pilotosimg">
+            <img class="foto-piloto" src="img/Shinji.png" alt="Shinji Ikari">
+            <img class="foto-piloto" src="img/Asuka.png" alt="Asuka Langley">
+            <img class="foto-piloto" src="img/Rei.png" alt="Rei Ayanami">
+        </div>
+
+        <div class="columna-info">
+            <div class="info-piloto-scroll" data-piloto="shinji">
+                <h2 id="shinji">Shinji Ikari</h2>
+                <h3>TERCER NIÑO</h3>
+                <p>Shinji es hijo de la bioingeniera Yui Ikari y del jefe de la organización NERV, Gendo Ikari.</p><br><p>Tras
+                    el fallecimiento de su madre, su padre lo abandonó, y vivió durante 11 años con su sensei. Sin
+                    embargo, su vida dio un giro inesperado cuando fue convocado a Tokio-3 para pilotar la Unidad-01 y
+                    enfrentar a los Ángeles.</p>
+            </div>
+
+            <div class="info-piloto-scroll" data-piloto="asuka">
+                <h2 id="asuka">Asuka Langley Soryu</h2>
+                <h3>SEGUNDO NIÑO</h3>
+                <p>Asuka es una piloto de Evangelion excepcional. De nivel semejante al de Shinji, ella se ufana de ser
+                    piloto de EVA. Tiene un alto nivel de sincronización, superando al de Shinji hasta el episodio 16.
+                </p>
+            </div>
+
+            <div class="info-piloto-scroll" data-piloto="rei">
+                <h2 id="rei">Rei Ayanami</h2>
+                <h3>PRIMER NIÑO</h3>
+                <p>Rei Ayanami es el "Primer Niño" designada para pilotar la unidad prototipo Evangelion-00.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/animacion-pilotos.js"></script>
+</body>
+
+</html>
